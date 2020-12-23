@@ -4,8 +4,9 @@ html{
 body{
     background-color: rgba(240, 9, 9, 0.836);
     font-family: "Nunito", sans-serif;
+    font-weight: 400;
 }
-#mainNavbar{
+ #mainNavbar{
     font-size: 1.5rem;
     text-transform: uppercase;
 }
@@ -17,47 +18,74 @@ h1:hover{
     color:  white
 }
 
-.quest{
-    margin: 0;
-    padding:25px 25px;
-}
 img {
+    max-width: 100%;
+    height: auto;
     padding-bottom: 10px;
 }
 .headingGroup span{
     color: rgba(0,135,62,0.685);
     font-weight: 400;
 }
-.headingGroup {
-    text-align: center;
-}
+
 .headingGroup h1{
     font-weight: 100;
     font-size: 4rem;
 }
 
-@media only screen and (max-width: 1450px) {
+.quest{
+    align-items: center;
+}
+
+ #textmobile {
+     display: none;
+ }
+ .mobileheader{
+     display: none;
+ }
+
+ @media only screen and (max-width: 1450px) {
+    .headingGroup h1{
+        font-size: 3rem;
+    }
+    
+  }
+
+@media only screen and (max-width: 1200px) {
     .headingGroup h1{
         font-size: 2.5rem;
     }
   }
-
-@media only screen and (max-width: 1050px) {
-    .headingGroup h1{
-        font-size: 2rem;
-    }
-  }
-  @media only screen and (max-width: 750px) {
+  
+  @media only screen and (max-width: 950px) {
     .headingGroup{
-        padding-top: 10%;
+        padding-top: 30%;
+        width: 100%;
     }
+    #nonmobile{
+        display: none;
+    }
+    #textmobile {
+        display: block;
+    }
+    .images{
+        display: none;
+    }
+    .mobileheader{
+        display: block;
+    }
+    .headernonmobile{
+        display: none;
+    }
+    
     .headingGroup h1{
         font-size: 1.5rem;
     }
-  }
+  } 
   @media only screen and (max-width: 575px) {
-    .headingGroup{
-        margin: 50px;
-        font-size: 1rem;
+    #textmobile{
+        width: 100%;
     }
   }
+
+ 
